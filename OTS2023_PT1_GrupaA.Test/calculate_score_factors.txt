@@ -1,0 +1,16 @@
+﻿# fish [0,12][13,250]; [0,6][7,250]
+# bait [0,9][10,380]
+
+fish: 0, 1, 5, 6, 7, 8, 11, 12, 13, 14, 120, 249, 250
+bait: 0, 1, 4, 8, 9, 10, 11, 185, 379, 380
+hasBoat: true, false
+score: Average, Good, Bad
+
+if [fish] > 12 then [score] = "Good";
+if [bait] >= 10 and [hasBoat] = "true" and [fish] > 6 then [score] = "Good";
+if [bait] >= 10 and [hasBoat] = "true" and [fish] <= 6 then [score] = "Average";
+if [fish] <= 12 or [bait] < 10 or [hasBoat] = "false" then [score] = "Bad";
+
+
+Constraints Warning: Restrictive constraints. Output will not contain following values: 
+  score: Average -> dodati rucno TestCase-ove
