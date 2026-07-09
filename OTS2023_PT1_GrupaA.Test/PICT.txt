@@ -1,0 +1,3 @@
+AmountOfSheep:2, 10, 15
+AmountOfClover:5, 11
+HasSheepDog: true, false
